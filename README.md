@@ -1,0 +1,2 @@
+# CARPRC1-PROGRAMACAO-DE-COMPUTADORES-1
+Conteúdos produzidos nas aulas da faculdade IFSP de "CARPRC1 - PROGRAMAÇÃO DE COMPUTADORES 1" do ano de 2025
