@@ -3,6 +3,8 @@ package lista04;
 
 
 public class PessoaJuridica extends Contato{
+    public static final String TIPO = "Pessoa Jurídica";
+    
     private String cnpj;
     private String incricaoEstadual;
     private String razaoSocial;
@@ -22,7 +24,7 @@ public class PessoaJuridica extends Contato{
         this.cnpj = cnpj;
     }
 
-    public String getIncricaoEstadual() {
+    public String getInscricaoEstadual() {
         return incricaoEstadual;
     }
 
@@ -38,6 +40,20 @@ public class PessoaJuridica extends Contato{
         this.razaoSocial = razaoSocial;
     }
     
+    @Override
+    public void exibeContato(){
+        System.out.println("[" + TIPO + "]"
+            + "Nome: " + super.getNome()
+            + " | Endereço: " + super.getEndereco()
+            + " | Email: " + super.getEmail()
+            + " | CNPJ: " + getCnpj()
+            + " | Inscrição Estadual: " + getInscricaoEstadual()
+            + " | Razão Social: " + getRazaoSocial()
+        );
+    }
     
-    
+    @Override
+    public String getDocumento(){
+        return cnpj;
+    }
 }

@@ -2,18 +2,18 @@
 package lista04;
 
 
-public class Contato {
+public abstract  class Contato {
     private String nome;
-    private String endereço;
+    private String endereco;
     private String email;
 
-    public Contato(String nome, String endereço, String email) {
-        this.nome = nome;
-        this.endereço = endereço;
-        this.email = email;
-    }
-
     
+    
+    public Contato(String nome, String endereco, String email) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.email = email;
+    }   
     
     public String getNome() {
         return nome;
@@ -23,12 +23,12 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereço(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getEmail() {
@@ -39,6 +39,7 @@ public class Contato {
         this.email = email;
     }
     
+    public abstract void exibeContato();
     
-    
+    public abstract String getDocumento();
 }
