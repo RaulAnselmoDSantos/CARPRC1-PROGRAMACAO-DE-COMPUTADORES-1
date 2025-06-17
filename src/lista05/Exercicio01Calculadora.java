@@ -1,6 +1,8 @@
 
 package lista05;
 
+import lista05.CalculadoraCientifica;
+
 /**
  *
  * @author Raul
