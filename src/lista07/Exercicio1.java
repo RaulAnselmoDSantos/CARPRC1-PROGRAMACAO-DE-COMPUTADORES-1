@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author F1
+ * @author Raul feito para estudo
  */
+
 public class Exercicio1 {
 
     /**
